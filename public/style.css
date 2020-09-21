@@ -1,0 +1,65 @@
+#indexBody{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-image: url('https://www.purevacations.com/wp-content/uploads/2019/10/Acorn-Street-Boston-1024x683.jpg');
+}
+
+h1{
+font-family: 'Abel', sans-serif;
+}
+#login{
+  position: relative;
+	min-height: 100vh;
+	background-color: #E1E8EE;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Vibur', cursive;
+}
+#postings{
+    padding-top:80px;
+}
+#profile{
+    padding-top:80px;
+    background-image: url('https://www.ihcreditunion.com/wp-content/uploads/2020/04/helping-hands-header-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(20,60,103);
+    margin-left: 100px;
+}
+#signip{
+    padding-top:80px;
+}
+#loginForm{
+ 	font-family: 'Vibur',sans-serif;
+
+}
+.row{
+  text-align: center;
+  font-family: 'Vibur', ;
+}
+img{
+  height: 200px;
+}
+
+/* .container{
+  background-image: url('https://www.purevacations.com/wp-content/uploads/2019/10/Acorn-Street-Boston-1024x683.jpg');
+} */
+#index{
+  background-color: yellow;
+  font-family: 'Playfair Display', serif;
+
+}
+#loginButton{
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 80px;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-left: -5px;
+    border-radius: 5px;
+    background-color: grey;
+}

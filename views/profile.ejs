@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <title>Neighbor Profile</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="profile">
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-user"></span> Profile Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+
+
+        <div class="col-sm-6">
+          <h3>Add a post</h3>
+          <h4>Note: In order to post you must include a photo</h4>
+        <% if (user.local.email) { %>
+
+
+          <form action="/post" enctype="multipart/form-data" method="POST">
+            <label for="">Title</label>
+            <br>
+            <input type="text" name="title" value="">
+            <br>
+           <!-- no nerd fight here I dont want no smoke I'm using a br tag
+           this bootstrap is messing with my css skills if you're still reading this hope your doing well :)  -->
+            <label for="">Details</label>
+            <textarea name="details" rows="8" cols="80"></textarea>
+            <input class="formFlexResize" type="file" name="file-to-upload"></input>
+
+            <label for="">Name</label>
+
+            <input type="text" name="name" value="<%= user.local.name %>">
+              <label for="">Email</label>
+            <input type="text" value="<%= user.local.email %>" name="email">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <% } %>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
